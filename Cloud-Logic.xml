@@ -1,0 +1,32 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" collection="true">
+  <block type="controls_if" id="65Sew^Sr_^T=dOo;$ZEg">
+    <value name="IF0">
+      <block type="math_number_property" id="9J~7b$TQGxB@hYyhM)4i">
+        <mutation divisor_input="false"></mutation>
+        <field name="PROPERTY">EVEN</field>
+        <value name="NUMBER_TO_CHECK">
+          <shadow type="math_number" id="0MPrgIklI(zkx+I5lbh/">
+            <field name="NUM">0</field>
+          </shadow>
+          <block type="last_digit" id="c^R_~l?)*PW2?cNrSU~b"></block>
+        </value>
+      </block>
+    </value>
+    <statement name="DO0">
+      <block type="notify" id="jLb(45[Y%z)rPTx[~hxP">
+        <field name="NOTIFICATION_TYPE">warn</field>
+        <field name="NOTIFICATION_SOUND">earned-money</field>
+        <value name="MESSAGE">
+          <shadow type="text" id="NaLaA5Nhcz_OA$?4;_4}">
+            <field name="TEXT">entramos!</field>
+          </shadow>
+        </value>
+        <next>
+          <block type="purchase" id="W6q#Z-I3q3d[d3-`S[dS">
+            <field name="PURCHASE_LIST">DIGITOVER</field>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
